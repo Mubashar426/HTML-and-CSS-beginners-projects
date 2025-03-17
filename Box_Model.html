@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Box Model Shape for Better Understanding Using HTML and CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container{
+            position: relative;
+            width: 850px;
+            height: 500px;
+            background: #f1f1f1;
+            text-align: center;
+            border: 2px dashed #ccc;
+            animation: animate 0.5s linear 1 alternate;
+        }
+        @keyframes animate{
+            0%{
+                transform: scaleX(0);
+            }
+            100%{
+                transform: scaleX(50px);
+            }
+        }
+        .container h3{
+            font-weight: 500;
+            font-size: 24px;
+            margin-top: 8px;
+        }
+        .box{
+            position: absolute;
+            left: 75px;
+            top: 50px;
+            width: 700px;
+            height: 400px;
+            background: #04AA6D;
+            animation: animates 0.5s linear 1 alternate;
+            animation-delay: 0.5s;
+        }
+        @keyframes animates{
+            0%{
+                transform: scaleY(0);
+            }
+            100%{
+                transform: scaleY(50px);
+            }
+        }
+        .child{
+            position: absolute;
+            left: 75px;
+            top: 50px;
+            width: 550px;
+            height: 300px;
+            background: #f1f1f1;
+            animation: animatess 0.5s linear 1 alternate;
+            animation-delay: 1s;
+        }
+        @keyframes animatess{
+            0%{
+                transform: scaleX(0);
+            }
+            100%{
+                transform: scaleX(50px);
+            }
+        }
+        .content{
+            position: absolute;
+            left: 75px;
+            top: 50px;
+            width: 400px;
+            height: 200px;
+            background: white;
+            border: 2px dashed #ccc;
+            animation: animatesss 0.5s linear 1 alternate;
+            animation-delay: 1.5s;
+        }
+        @keyframes animatesss{
+            0%{
+                transform: scaleY(0);
+            }
+            100%{
+                transform: scaleY(50px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Margin</h3>
+        <div class="box">
+            <h3>Border</h3>
+            <div class="child">
+                <h3>Padding</h3>
+                <div class="content">
+                    <h3>Content</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
