@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Half WaterMelon Using Pure CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .water-melon{
+            width: 320px;
+            height: 160px;
+            background-color: #ff395d;
+            border-bottom: 20px solid #92e256;
+            border-left: 20px solid #92e256;
+            border-right: 20px solid #92e256;
+            border-bottom-left-radius: 200px;
+            border-bottom-right-radius: 200px;
+            transform: rotate(25deg);
+            
+        }
+        .water-melon::before{
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: 0;
+            width: calc(50% + 20px);
+            height: calc(100% + 20px);
+            background: rgba(255, 255, 255, 0.3);
+        }
+        h2{
+            position: absolute;
+            top: -30px;
+            text-align: center;
+            font-size: 30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            top: 35%;
+            left: 45%;
+            transform: translateX(-10%) translateY(-50%) rotate(25deg);
+        }
+        span{
+            display: block;
+            width: 10px;
+            height: 10px;
+            background: #262626;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 18px;
+            position: relative;
+            left: 6.5%;
+            top: -4px;
+        }
+        span:nth-child(11),
+        span:nth-child(15),
+        span:nth-child(16){
+            background: transparent;
+        }
+    </style>
+</head>
+<body>
+    <h2>Watermelon</h2>
+    <div class="water-melon">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</body>
+</html>
