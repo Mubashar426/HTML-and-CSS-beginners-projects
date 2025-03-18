@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center a div methods using CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            /*Method 01*/
+            /*display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;*/
+
+            /*Method 02*/
+            /*position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);*/
+            background-color: aliceblue;
+        }
+        .container{
+            width: 500px;
+            height: 500px;
+            background-color: blueviolet;
+            color: aliceblue;
+            font-size: 25px;
+            text-transform: capitalize;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform-style: preserve-3d;
+            transition: 3s;
+        }
+        .container:hover{
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">Center a div</div>
+</body>
+</html>

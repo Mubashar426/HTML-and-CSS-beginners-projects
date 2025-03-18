@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendulum Animation Using CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        body{
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: #191825;
+        }
+        .pendulum{
+            width: 500px;
+            aspect-ratio: 1;
+            border-top: 25px solid #865dff;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+        }
+        .pendulum div{
+            position: relative;
+            width: 10px;
+            height: 400px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background-color: #865dff;
+            animation: swing 2.5s linear infinite;
+            transform-origin: top left;
+        }
+        @keyframes swing{
+            0%{
+                transform: rotate(0deg);
+            }
+            25%{
+                transform: rotate(30deg);
+            }
+            50%{
+                transform: rotate(0deg);
+            }
+            75%{
+                transform: rotate(-30deg);
+            }
+            100%{
+                transform: rotate(0);
+            }
+        }
+        .pendulum div::before{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            top: 70%;
+            left: -45.5px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #865dff;
+        }
+    </style>
+</head>
+<body>
+    <div class="pendulum">
+        <div></div>
+    </div>
+</body>
+</html>
