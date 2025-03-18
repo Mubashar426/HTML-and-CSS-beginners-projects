@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Time Table</title>
+    <style>
+        .watermark{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            opacity: 30%;
+            margin-top: 50%;
+        }
+        .sign{
+            text-align: right;
+            padding-right: 15px;
+            font-weight: bold;
+        }
+        .sign1{
+            border: none;
+            border-bottom: 2px solid #000;
+            outline: none;
+        }
+        .btn {
+            background-color: DodgerBlue;
+            border: none;
+            color: white;
+            padding: 12px 30px;
+            cursor: pointer;
+            font-size: 20px;
+            margin-top: 20px;
+            transform: translateX(350%);
+          }
+          .btn:hover {
+            background-color: RoyalBlue;
+            box-shadow: 0 3px 20px rgb(1, 20, 187);
+          }
+    </style>
+</head>
+<body>
+    <div class="watermark">
+        <img src="weblogo.png" alt="Watermark">
+    </div>
+    <table border="3" align="center" cellpadding="7" cellspacing="0" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        <thead>
+            <tr>
+                <th colspan="5">Department of Computer Science<br>The Superior University Lahore (Gold Campus)<br>Mid-term Examination Fall-2023<br><span style="font-size: x-small;">(17 October, 2023 to 23 October, 2023)</span></th>
+            </tr>
+            <tr>
+                <th>Date</th>
+                <th>Day</th>
+                <th>Time</th>
+                <th rowspan="10">Course</th>
+                <th>Sections</th>
+            </tr>
+        </thead>  
+        <tbody>
+            <tr>
+                <td rowspan="10" style="font-weight: 800; border-bottom: 3px solid #000;">17-10-2023</td>
+                <td rowspan="10" align="center" style="font-weight: 800; border-bottom: 3px solid #000;">Tuesday</td>
+                <td rowspan="4" align="center">8:30 - 10:00</td>
+                <td>Probability & Statistic</td>
+                <td width="600">BSCS-3A, 3B, 3C, 3D, 3E, 3F, 3G, 3H, BSGM-3A,</td>
+            </tr>
+            <tr>
+                <td>Probability Random Processes</td>
+                <td>BSROB-3A, BSROB-4A</td>
+            </tr>
+            <tr>
+                <td>3D Modling and Animation</td>
+                <td>BSGM-5A</td>
+            </tr>
+            <tr>
+                <td>Design & Analysis of Algorithms</td>
+                <td>BSCS-4A, 4B</td>
+            </tr>
+            <tr>
+                <td rowspan="3" align="center">10:30 - 12:00</td>
+                <td>Information Security & Cryptography</td>
+                <td>BSCS-6A, 6B,</td>
+            </tr>
+            <tr>
+                <td>Computer Graphics</td>
+                <td>BSGM-4A</td>
+            </tr>
+            <tr>
+                <td>Communication and Presentation Skills</td>
+                <td>BSCS-2A, 2B, 2C, BSROB-2A, BSGM-2A</td>
+            </tr>
+            <tr>
+                <td rowspan="3" align="center" style="border-bottom: 3px solid #000;">2:30 - 4:00</td>
+                <td>Mobile Application Development</td>
+                <td>BSCS-5A, 5B, 5C, BSGM-6A</td>
+            </tr>
+            <tr>
+                <td>Engineering Mechanics (Statics and Dynamics)</td>
+                <td>BSROB-5A</td>
+            </tr>
+            <tr>
+                <td style="border-bottom: 3px solid #000;">Linear Algebra</td>
+                <td style="border-bottom: 3px solid #000;">BSCS-3A, 3B, 3C, 3D, 3E, 3F, 3G, 3H, BSROB-2A, BSGM-3A</td>
+            </tr>
+
+
+
+            <tr>
+                <td rowspan="9" style="font-weight: 800; border-bottom: 3px solid #000;">18-10-2023</td>
+                <td rowspan="9" align="center" style="font-weight: 800; border-bottom: 3px solid #000;">Wednesday</td>
+                <td rowspan="3" align="center">8:30 - 10:00</td>
+                <td>Computer Organizatioin & Assembly Language</td>
+                <td width="600">BSCS-3A, 3B, 3C, 3D, 3E, 3F, 3G, 3H,</td>
+            </tr>
+            <tr>
+                <td>Robotics Design-II</td>
+                <td>BSROB-4A</td>
+            </tr>
+            <tr>
+                <td>Graph Theory</td>
+                <td>BSCS-4A, 4B, BSGM-4A</td>
+            </tr>
+            <tr>
+                <td rowspan="3" align="center">10:30 - 12:00</td>
+                <td>Digital Image Processing</td>
+                <td>BSCS-6A, 6B,</td>
+            </tr>
+            <tr>
+                <td>Computer Aided Design</td>
+                <td>BSROB-3A</td>
+            </tr>
+            <tr>
+                <td>Discrete Structures</td>
+                <td>BSCS-2A, 2B, 2C, BSROB-2A, BSGM-2A</td>
+            </tr>
+            <tr>
+                <td rowspan="3" align="center" style="border-bottom: 3px solid #000;">2:30 - 4:00</td>
+                <td>Web Application Development</td>
+                <td>BSCS-5A, 5B, 5C, BSGM-5A</td>
+            </tr>
+            <tr>
+                <td>Fundamentals of Game Design</td>
+                <td>BSGM-3A</td>
+            </tr>
+            <tr>
+                <td style="border-bottom: 3px solid #000;">Digital Signal Processing</td>
+                <td style="border-bottom: 3px solid #000;">BSROB-5A</td>
+            </tr>
+
+
+
+             <tr>
+                <td rowspan="8" style="font-weight: 800; border-bottom: 3px solid #000;">19-10-2023</td>
+                <td rowspan="8" align="center" style="font-weight: 800; border-bottom: 3px solid #000;">Thursday</td>
+                <td rowspan="2" align="center">8:30 - 10:00</td>
+                <td>Computer Networks</td>
+                <td width="600">BSCS-5A, 5B, 5C, BSROB-5A, BSGM-6A</td>
+            </tr>
+            <tr>
+                <td>Calculus & Analytical Geometry</td>
+                <td>BSCS-2A, 2B, 2C, BSGM-2A, BSROB-3A</td>
+            </tr>
+            <tr>
+                <td rowspan="3" align="center">10:30 - 12:00</td>
+                <td>Digital Marketing</td>
+                <td>BSCS-3A, 3B, 3C, 3D, 3E, 3F, 3G, 3H, BSGM-3A</td>
+            </tr>
+            <tr>
+                <td>Electrical Machines</td>
+                <td>BSROB-4A</td>
+            </tr>
+            <tr>
+                <td>Introduction to Robotics</td>
+                <td>BSROB-3A</td>
+            </tr>
+            <tr>
+                <td rowspan="3" align="center" style="border-bottom: 3px solid #000;">2:30 - 4:00</td>
+                <td>Theory of Programming Languages</td>
+                <td>BSCS-4A, 4B, BSGM-4A</td>
+            </tr>
+            <tr>
+                <td>Simulation & Modeling</td>
+                <td>BSGM-5A</td>
+            </tr>
+            <tr>
+                <td style="border-bottom: 3px solid #000;">Pakistan Studies</td>
+                <td style="border-bottom: 3px solid #000;">BSGM-3A, BSROB-5A, BSCS-6A, 6B</td>
+            </tr>
+
+
+
+            <tr>
+                <td rowspan="10" style="font-weight: 800; border-bottom: 3px solid #000;">20-10-2023</td>
+                <td rowspan="10" align="center" style="font-weight: 800; border-bottom: 3px solid #000;">Friday</td>
+                <td rowspan="3" align="center">8:30 - 10:00</td>
+                <td>Digital Logic & Design</td>
+                <td width="600">BSCS-2A, 2B, 2C, BSROB-2A,</td>
+            </tr>
+            <tr>
+                <td>Multimedia Systems and Design</td>
+                <td>BSGM-2A</td>
+            </tr>
+            <tr>
+                <td>Software Engineering</td>
+                <td>BSCS-5A, 5B, 5C, BSROB-5A, BSGM-5A</td>
+            </tr>
+            <tr>
+                <td rowspan="2" align="center">10:30 - 12:00</td>
+                <td>Artificial Intelligence</td>
+                <td>BSCS-6A, 6B, BSGM-6A, BSGM-7A</td>
+            </tr>
+            <tr>
+                <td>Operating Systems</td>
+                <td>BSCS-4A, 4B, BSROB-4A, BSGM-4A</td>
+            </tr>
+            <tr>
+                <td rowspan="5" align="center" style="border-bottom: 3px solid #000;">2:30 - 4:00</td>
+                <td>Pre-Algebra</td>
+                <td>BSCS-3, BSGM-3A, BSROB-3A,</td>
+            </tr>
+            <tr>
+                <td>Pre-Calculus</td>
+                <td>BSCS-2, BSGM-2A, BSROB-2A,</td>
+            </tr>
+            <tr>
+                <td>Foreign Language (Chinese)</td>
+                <td>BSCS-7C</td>
+            </tr>
+            <tr>
+                <td>Foreign Language (French)</td>
+                <td>BSCS-7A, BSCS-7B</td>
+            </tr>
+            <tr>
+                <td style="border-bottom: 3px solid #000;">Foreign Language (Arabic)</td>
+                <td style="border-bottom: 3px solid #000;">BSCS-7D, BSCS-7E</td>
+            </tr>
+
+
+
+            <tr>
+                <td rowspan="5" style="font-weight: 800; border-bottom: 3px solid #000;">21-10-2023</td>
+                <td rowspan="5" align="center" style="font-weight: 800; border-bottom: 3px solid #000;">Saturday</td>
+                <td rowspan="3" align="center">10:00 - 11:30</td>
+                <td>Data Science</td>
+                <td width="600">BSCS-7A, 7B, 7C, 7D, 7E</td>
+            </tr>
+            <tr>
+                <td>Game Project Management</td>
+                <td>BSGM-7A</td>
+            </tr>
+            <tr>
+                <td>Professional Practices</td>
+                <td>BSCS-8A, 8B</td>
+            </tr>
+            <tr>
+                <td rowspan="2" align="center" style="border-bottom: 3px solid #000;">1:00 - 2:30</td>
+                <td>Freelancing</td>
+                <td>BSCS-7A, 7B, 7C, 7D, 7E</td>
+            </tr>
+            <tr>
+                <td style="border-bottom: 3px solid #000;">Interactive Game and Audio</td>
+                <td style="border-bottom: 3px solid #000;">BSGM-7A</td>
+            </tr>
+
+
+
+            <tr>
+                <td rowspan="5" style="font-weight: 800; border-bottom: 3px solid #000;">22-10-2023</td>
+                <td rowspan="5" align="center" style="font-weight: 800; border-bottom: 3px solid #000;">Sunday</td>
+                <td rowspan="3" align="center">10:00 - 11:30</td>
+                <td>Distributed Computing</td>
+                <td width="600">BSCS-7A, 7B, 7C, 7D, 7E</td>
+            </tr>
+            <tr>
+                <td>HCI</td>
+                <td>BSGM-7A</td>
+            </tr>
+            <tr>
+                <td>Compiler Construction</td>
+                <td>BSCS-8A, 8B</td>
+            </tr>
+            <tr>
+                <td rowspan="2" align="center" style="border-bottom: 3px solid #000;">1:00 - 2:30</td>
+                <td>Social Enterpreneurship</td>
+                <td>BSCS-8A, 8B</td>
+            </tr>
+            <tr>
+                <td style="border-bottom: 3px solid #000;">Theory of Automata</td>
+                <td style="border-bottom: 3px solid #000;">BSCS-7A, 7B, 7C, 7D, 7E</td>
+            </tr>
+
+
+
+            <tr>
+                <td rowspan="8" style="font-weight: 800; border-bottom: 3px solid #000;">23-10-2023</td>
+                <td rowspan="8" align="center" style="font-weight: 800; border-bottom: 3px solid #000;">Monday</td>
+                <td rowspan="3" align="center">8:30 - 10:00</td>
+                <td>Data Structures & Algorithms</td>
+                <td width="600">BSCS-3A, 3B, 3C, 3D, 3E, 3F, 3G, 3H, BSROB-3A, BSGM-3A</td>
+            </tr>
+            <tr>
+                <td>Game Programming</td>
+                <td>BSGM-5A</td>
+            </tr>
+            <tr>
+                <td>Technical & Business Writing</td>
+                <td>BSCS-5A, 5B, 5C, BSROB-5A</td>
+            </tr>
+            <tr>
+                <td rowspan="2" align="center">10:30 - 12:00</td>
+                <td>Object Oriented Programming</td>
+                <td>BSCS-2A, 2B, 2C, BSROB-2A, BSGM-2A</td>
+            </tr>
+            <tr>
+                <td>Database Systems</td>
+                <td>BSCS-4A, 4B, BSROB-4A, BSGM-4A</td>
+            </tr>
+            <tr>
+                <td rowspan="3" align="center" style="border-bottom: 3px solid #000;">2:30 - 4:00</td>
+                <td>Advanced Web & Mobile Application Development</td>
+                <td>BSCS-6A, 6B</td>
+            </tr>
+            <tr>
+                <td>Fundamentals of Business and Finance</td>
+                <td>BSGM-5A, BSGM-6A</td>
+            </tr>
+            <tr>
+                <td style="border-bottom: 3px solid #000;">Islamic Studies</td>
+                <td style="border-bottom: 3px solid #000;">BSCS-5A, 5B, 5C, BSROB-3A, BSGM-2A</td>
+            </tr>
+            
+
+
+            <tr>
+                <td colspan="5" align="center" height="100" style="font-weight: 800; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Note:<br>Those students who have clashes are required to submit application till Friday (20-10-2023) to<br>Mr. M. Jameel (Exam Head, CS Department, Office # 09)</td>
+            </tr>
+        </tbody>     
+    </table>
+    <br>
+    <br>
+    <div class="sign">
+        Invigilator Signature: <input type="text" name="signature" class="sign1" placeholder="Enter Signature...">
+    </div>
+
+    <button class="btn" onclick="alert('File has been starting download...')"><i class="fa fa-download"></i> Download</button>
+</body>
+</html>
